@@ -1,8 +1,7 @@
-Cython==0.23.4
-Kivy==1.9.1.dev0
+Cython==0.21.2
+Kivy==1.9.0
 Kivy-Garden==0.1.1
 pygame==1.9.2a0
-pygestalt==0.7
-pyserial==3.0b1
+pyserial==2.7
 requests==2.8.1
 wheel==0.24.0

@@ -1,8 +1,9 @@
 Cython==0.23.4
 Kivy==1.9.1.dev0
+#Kivy==1.9.0
 Kivy-Garden==0.1.1
 pygame==1.9.2a0
-pygestalt==0.7
-pyserial==3.0b1
+pygestalt==0.7 #python setup.py install
+pyserial==3.0b1 #manually installed 2.7
 requests==2.8.1
-wheel==0.24.0
+wheel==0.24.0 #manually installed 0.26.0 from unofficial

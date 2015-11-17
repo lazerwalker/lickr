@@ -7,6 +7,9 @@ from kivy.graphics import Color, Rectangle, Point, GraphicException
 from random import random
 from math import sqrt
 
+#import classes for stages
+import delta_stages
+
 def calculate_points(x1, y1, x2, y2, steps=5):
     dx = x2 - x1
     dy = y2 - y1
@@ -41,6 +44,7 @@ class lickr(FloatLayout):
         self.update_touch_label(ud['label'], touch)
         self.add_widget(ud['label'])
         touch.grab(self)
+
         return True
 
     def on_touch_move(self, touch):
@@ -108,4 +112,17 @@ class lickrApp(App):
         return True
 
 if __name__ == '__main__':
+
+    stages = delta_stages.virtualMachine(persistanceFile = "test.vmp")
+    stages.abgNode.setVelocityRequest(8)
+
+    moves = []
+################################################################################
+################################################################################
+################################################################################
+#Threading?? or combine virtualMachine and App to run in same instance??
+################################################################################
+################################################################################
+################################################################################
+
     lickrApp().run()
